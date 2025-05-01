@@ -8,8 +8,10 @@ SalesRank.AI is a responsive website designed to showcase AI-powered solutions f
 
 1. **Clone the Repository**:
    ```bash
-   git clone <repository-url>
-   cd <repository-folder>
+   git clone <https://github.com/yooimran/Ai-Coach-Frontend.git>
+
+   Live Site <https://yooimran.github.io/Ai-Coach-Frontend/>
+   
 
    Install Dependencies:
 
@@ -28,7 +30,7 @@ Update the style.css file for additional styling.
 Replace placeholder images in the img folder with your own assets.
 
 
-**Tools/Packages Used**
+## Tools/Packages Used
 HTML5: For structuring the website.
 CSS3: For styling the website.
 Tailwind CSS: Utility-first CSS framework for rapid UI development.
@@ -37,7 +39,7 @@ JavaScript: For interactive elements (e.g., FAQ toggle functionality and chatbox
 Font: Google Fonts - Manrope.
 
 
-**Features**
+## Features
 Responsive Design: Fully responsive for desktop, tablet, and mobile devices.
 Interactive FAQ: Expand/collapse functionality for frequently asked questions.
 Chatbox: Real-time chat simulation with user input.
@@ -45,12 +47,12 @@ Call-to-Action: Encourages users to subscribe to the newsletter.
 Social Media Links: Links to social media platforms in the footer.
 
 
-**Author**
+## Author
 Ahm Imran Uddin
 Gmail: ahmimranuddin@gmail.com
 Phone: +8801303982229
 
-**Screenshots**
+## Screenshots
 Hero Section
 
 
