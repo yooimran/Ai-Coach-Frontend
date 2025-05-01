@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SalesRank.AI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/daisyui@2.51.5/dist/full.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.5/dist/full.css" rel="stylesheet" />
+
+
+</head>
+<body class=" text-[#111827] font-Manrope  ">
+  <!-- Navbar -->
+  <header class="items-center py-6 px-6 lg:px-20 bg-b shadow-sm max-w-7xl mx-auto">
+    <div class="flex justify-between items-center">
+      <div class="flex items-center gap-2">
+        <img src="./img/logo.png" class="" />
+        <nav class="hidden md:flex gap-6 text-sm text-gray-700">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Pricing</a>
+          <a href="#">Consulting</a>
+          <a href="#">AI Coach</a>
+        </nav>
+      </div>
+      <button class="px-4 py-2 text-sm border rounded-3xl border-gray-300 hover:bg-gray-100 hidden md:block">Get
+        started</button>
+      <button id="mobile-menu-toggle" class="md:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden flex-col gap-4 mt-4 text-sm text-gray-700 bg-white shadow-md rounded-lg p-4">
+      <a href="#" class="block py-2 px-4 hover:bg-gray-100 rounded">Home</a>
+      <a href="#" class="block py-2 px-4 hover:bg-gray-100 rounded">About</a>
+      <a href="#" class="block py-2 px-4 hover:bg-gray-100 rounded">Pricing</a>
+      <a href="#" class="block py-2 px-4 hover:bg-gray-100 rounded">Consulting</a>
+      <a href="#" class="block py-2 px-4 hover:bg-gray-100 rounded">AI Coach</a>
+      <button class="w-full px-4 py-2 text-sm border rounded-3xl border-gray-300 hover:bg-gray-100">Get started</button>
+    </div>
+  </header>
+ <!-- Hero Section -->
+  <div class="bg-gradient-to-r from-blue-100 to-white shadow-sm backdrop-blur pb-8">
+    <section class="grid  md:flex justify-between gap-10 items-center  px-6 lg:px-20  max-w-7xl mx-auto ">
+      <div>
+        <h1 class=" md:text-7xl b-4 hidden md:block">Your AI-<br />Powered <br> Sales Coach</h1>
+        <h1 class="text-3xl md:hidden">Your AI-Powered Sales Coach</h1>
+        <div class="flex items-center gap-4 mt-6">
+          <img src="./img/smRobot.png" alt="">
+          <p class="text-gray-600 mb-6 max-w-48">Get real-time coaching, script suggestions, and deal-closing strategies
+            powered by advanced AI technology.</p>
+        </div>
+        <div class="flex justify-between mb-3 gap-4 ">
+          <div class="flex gap-6 mt-4">
+            <div class="text-center">
+              <div>
+                <div class="bg-white w-12 h-12 mx-auto rounded flex items-center justify-center shadow">
+                  <img class="bg-white w-10 h-10" src="./img/backup_table.png" alt="">
+                </div>
+
+              </div>
+            </div>
+            <div class="">
+              <div class="text-xl font-bold">2000+</div>
+              <p class="text-sm text-gray-500">Provide tailored</p>
+            </div>
+          </div>
+          <div class="flex gap-6 mt-4">
+            <div class="text-center">
+              <div>
+                <div class="bg-white w-12 h-12 mx-auto rounded flex items-center justify-center shadow">
+                  <img class="bg-white w-10 h-10" src="./img/atr.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="">
+              <div class="text-xl font-bold">2000+</div>
+              <p class="text-sm text-gray-500">Provide tailored</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="relative   ">
+        <div
+          class="  absolute bottom-0 left-6 md:-bottom-6 md:-left-[20%]  bg-white p-4 shadow-md rounded-xl -mb-6 -ml-6  md:max-w-[300px]">
+          <div class="flex items-center justify-between p-4  gap-4">
+            <h1 class="text-3xl">721+</h1>
+            <h1 class="text-3xl">1000+</h1>
+          </div>
+          <p class="text-xl font-semibold">721+ Growth is our priority.</p>
+          <p class="text-xs text-gray-500 mt-1 ">As a full-service business agency, we specialize in helping companies
+            of all sizes optimize their operations</p>
+        </div>
+        <img src="./img/HeroRobot.png" class="rounded-xl shadow-lg  w-[400px] h-[400px]" />
+      </div>
+    </section>
+  </div>
+
+  <!-- AI Chat Section -->
+  <div class="bg-gradient-to-r from-blue-900 to-blue-700">
+    <section class="text-white py-12 px-6 lg:px-16 rounded-xl max-w-7xl mx-auto">
+      <p class="text-yellow-500 text-xl">Live AI Coach</p>
+      <h2 class="text-2xl md:text-4xl font-semibold mb-10">Take a Suggestion Coaching</h2>
+      <div class="grid md:grid-cols-7 gap-8">
+        <!-- Chat Box -->
+        <div class="md:col-span-4">
+          <div class="bg-white rounded-xl shadow-lg">
+            <h3 class="text-gray-800 font-bold mb-4 p-4">AI Sales Coach</h3>
+            <!-- Chat Message -->
+            <div id="chat-messages" class="flex flex-col gap-4 bg-gray-200 h-56 p-4 md:p-7 mb-4 overflow-y-auto">
+              <div class="flex gap-4">
+          <div class="w-10 h-10 bg-gray-400 rounded-full flex-shrink-0"></div>
+          <div class="p-4 rounded-lg text-gray-700">
+            <p class="bg-gray-50 p-2 rounded-lg">
+              Hello! I'm your AI sales coach. How can I help you improve your sales performance today?
+            </p>
+          </div>
+              </div>
+            </div>
+            <!-- Quick Suggestions -->
+            <div class="flex flex-wrap gap-2 text-center items-center mx-auto mb-6">
+              <button class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm hover:bg-gray-200">
+          How do I handle objections?
+              </button>
+              <button class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm hover:bg-gray-200">
+          Give me a cold email template
+              </button>
+              <button class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm hover:bg-gray-200">
+          Closing techniques
+              </button>
+              <button class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm hover:bg-gray-200">
+          Negotiation tips
+              </button>
+            </div>
+            <!-- Input Area -->
+            <div class="flex flex-col sm:flex-row items-center gap-3 p-4 md:p-6">
+              <input id="chat-input" type="text" placeholder="Ask anything you need"
+          class="flex-1 p-3 border rounded-lg text-gray-700 focus:outline-none">
+              <button id="send-button" class="bg-blue-900 text-white px-6 py-3 rounded-lg hover:bg-blue-800 flex items-center gap-2">
+          Send
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+            <path d="M10 12l-4-4h8l-4 4z" />
+          </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      
+        <!-- Action Buttons -->
+        <div class="flex lg:flex-col justify-center items-center gap-4 bg-white rounded-full shadow-lg m-10 my-20  ">
+            <button class="w-10 h-10 hover:bg-green-300 rounded-full"><img src="./img/refresh.png" alt=""></button>
+            <button class="w-8 h-8 hover:bg-blue-300 rounded-full"><img src="./img/like.png" alt=""></button>
+            <button class="w-8 h-8 hover:bg-red-300 rounded-full"><img src="./img/dont-like.png" alt=""></button>
+            <button class="w-8 h-8 hover:bg-yellow-300 rounded-full"><img src="./img/shopping-bag.png" alt=""></button>
+            <button class="w-8 h-8 hover:bg-green-400 rounded-full"><img src="./img/volume.png" alt=""></button>
+        </div>
+        <!-- Analysis Section -->
+        <div class="space-y-6 md:col-span-2">
+          <!-- Real-time Analysis -->
+          <div class="bg-gray-200 rounded-xl p-6 shadow-lg">
+            <h3 class="text-gray-800 font-semibold text-xl mb-4">Real-time Analysis</h3>
+            <div class="space-y-6">
+              <div class="bg-white p-4 rounded-lg shadow-md">
+                <div class="flex items-center gap-2 mb-2">
+                  <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span class="text-gray-700">Confidence Level</span>
+                </div>
+                <div class=" flex justify-between items-center gap-2">
+                  <div class="h-2 bg-gray-400 rounded-full w-[90%]">
+                    <div class="h-2 bg-green-500 rounded-full w-[60%]"></div>
+                  </div>
+                  <span class="text-black">60%</span>
+                </div>
+              </div>
+              <div class="flex items-center gap-2 bg-white p-4 rounded-lg shadow-md">
+                <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                </svg>
+                <span class="text-gray-600">85% improvement in objection handling</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Actions -->
+          <div class="bg-gray-200 rounded-xl p-6 pb-12 shadow-lg">
+            <h3 class="text-gray-800 font-semibold text-xl mb-4">Quick Actions</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-left">
+              <button class="flex items-center gap-2 p-2 bg-gray-100 text-gray-700 rounded-xl hover:bg-white">
+                <img class="w-8 h-8" src="./img/Frame (1).png" alt="">
+                Generate Script
+              </button>
+              <button class="flex items-center gap-2 px-4 py-3 bg-gray-100 text-gray-700 rounded-xl hover:bg-white">
+                <img src="./img/Frame.png" alt="">
+                Practice Pitch
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Courses Section -->
+  <div class=" bg-white shadow-sm backdrop-blur">
+    <section class="py-20 px-6 lg:px-20 max-w-7xl mx-auto">
+      <div class="md:flex md:justify-between items-center mb-10">
+        <div>
+          <h2 class="text-3xl md:text-5xl  font-bold mb-5">Our Courses</h2>
+          <p class="md:max-w-[70%] text-justify mb-5 ">Explore our wide range of courses designed to enhance your skills
+            and knowledge in various domains. Learn at your own pace with expert guidance and practical insights.</p>
+        </div>
+        <button class=" text-sm px-4 w-[30%] md:w-[20%] py-2 bg-blue-700 text-white rounded">View All</button>
+      </div>
+      <div class="grid md:grid-cols-2 gap-10">
+        <div class="bg-gray-200 p-6 rounded-xl shadow-md overflow-hidden">
+          <img src="./img/ai1.png" alt="Course" class="w-full h-96 object-cover" />
+          <div class="p-2">
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex gap-3 mr-3  ">
+                <p class=" bg-white p-2 rounded-lg text-gray-500 mb-1">4Weeks</p>
+                <p class=" bg-white p-2 rounded-lg text-gray-500 mb-1">Beginner</p>
+              </div>
+              <p class="font-semibold">By John Smith</p>
+            </div>
+            <h3 class="font-semibold text-lg mb-2">Web Design Fundamentals</h3>
+            <p class="text-sm text-gray-600 mb-4 text-justify">Learn the fundamentals of web design, including HTML,
+              CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly
+              websites.</p>
+            <button class="bg-blue-700 w-full text-white text-sm px-4 py-2 rounded">Get it Now</button>
+          </div>
+        </div>
+        <div class="bg-gray-200 p-6 rounded-xl shadow-md overflow-hidden">
+          <img src="./img/ai2.png" alt="Course" class="w-full h-96 object-cover" />
+          <div class="p-4">
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex gap-3 mr-3 ">
+                <p class=" bg-white p-2 rounded-lg text-gray-500 mb-1">4Weeks</p>
+                <p class=" bg-white p-2 rounded-lg text-gray-500 mb-1">Beginner</p>
+              </div>
+              <p class="font-semibold">By John Smith</p>
+            </div>
+            <h3 class="font-semibold text-lg mb-2">Web Design Fundamentals</h3>
+            <p class="text-sm text-gray-600 mb-4 text-justify">Learn the fundamentals of web design, including HTML,
+              CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly
+              websites.</p>
+            <button class="bg-blue-700 w-full text-white text-sm px-4 py-2 rounded">Get it Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- FAQ Section -->
+  <section class="py-12 px-6 lg:px-20 bg-white max-w-7xl mx-auto text-black">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-blue-500 text-xl mb-4">Frequently Asked Questions</h2>
+      <h3 class="text-3xl font-bold mb-10 text-justify">Constant collaboration is how we roll. Let's see if we are a
+        good fit.</h3>
+      <div class="space-y-6">
+        <!-- FAQ Item 1 -->
+        <div class="border-t border-gray-700 pt-6">
+          <div class="flex justify-between items-center">
+            <h4 class="text-lg font-semibold">
+              <span class="text-yellow-500">01</span> Why should I choose Humestic?
+            </h4>
+            <button class="text-2xl text-gray-500 hover:text-gray-300 toggle-faq" data-target="faq-1">+</button>
+          </div>
+          <p id="faq-1" class="text-gray-500 mt-4 hidden text-justify">
+            Bottleneck mice my capacity is full, nor incentivization we need to start advertising on social media, or
+            helicopter view, for what the. Let's put a pin in that we need to build it so that it scales, are there any
+            leftovers in the kitchen? If you're not hurting you're not winning loop back.
+          </p>
+        </div>
+        <!-- FAQ Item 2 -->
+        <div class="border-t border-gray-700 pt-6">
+          <div class="flex justify-between items-center">
+            <h4 class="text-lg font-semibold">
+              <span class="text-yellow-500">02</span> I like your works, how do we start a project?
+            </h4>
+            <button class="text-2xl text-gray-500 hover:text-gray-300 toggle-faq" data-target="faq-2">+</button>
+          </div>
+          <p id="faq-2" class="text-gray-500 mt-4 hidden text-justify">
+            Starting a project with us is simple. Reach out through our contact form or email, and we'll schedule a
+            consultation to discuss your needs and goals.
+          </p>
+        </div>
+        <!-- FAQ Item 3 -->
+        <div class="border-t border-gray-700 pt-6">
+          <div class="flex justify-between items-center">
+            <h4 class="text-lg font-semibold">
+              <span class="text-yellow-500">03</span> What info is required to get a quotation?
+            </h4>
+            <button class="text-2xl text-gray-500 hover:text-gray-300 toggle-faq" data-target="faq-3">+</button>
+          </div>
+          <p id="faq-3" class="text-gray-500 mt-4 hidden text-justify">
+            To provide a quotation, we need details about your project scope, timeline, and specific requirements. The
+            more information you provide, the more accurate our estimate will be.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial Section -->
+  <section class="py-6 px-6 lg:px-20 bg-white">
+    <div class="max-w-4xl mx-auto text-center">
+      <blockquote class="text-xl md:text-2xl lg:text-4xl font-semibold text-gray-800 mb-8">
+        “ They thoroughly analyze our industry and target audience, allowing them to develop customized campaigns that
+        effectively reach and engage our customers. Their creative ideas and cutting-edge techniques have helped us stay
+        ahead of the competition. ”
+      </blockquote>
+      <div class="flex flex-col md:flex-row justify-between items-center mb-6">
+        <div class="mb-6 md:mb-0">
+          <div class="flex items-center justify-center gap-4">
+            <div class="w-10 h-10 bg-gray-400 rounded-full flex-shrink-0"></div>
+            <div class="text-left">
+              <p class="font-semibold text-gray-800">Michael Kaizer</p>
+              <p class="text-sm text-gray-500">CEO of Basecamp Corp</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center justify-center gap-6 mt-4 md:mt-0">
+          <button class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center hover:bg-gray-200">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-600" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
+          <p class="text-gray-500 text-sm">
+            <span class="font-semibold text-gray-800">01</span>/05
+          </p>
+          <button
+            class="w-10 h-10 bg-blue-900 text-white rounded-full flex items-center justify-center hover:bg-blue-800">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="bg-gradient-to-r from-blue-100 to-white  backdrop-blur  py-16 px-6 lg:px-20 shadow-md">
+    <!-- Call-to-Action Section -->
+    <section
+      class="max-w-5xl mx-auto rounded-xl bg-gradient-to-r from-blue-900 to-blue-700 text-white py-16 px-6 lg:px-20 text-center mb-16">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Hire Smarter?</h2>
+        <p class="text-lg mb-8">Unlock Exclusive Insights Subscribe to Our Newsletter</p>
+        <button class="bg-yellow-500 text-blue-900 font-semibold px-6 py-3 rounded-full hover:bg-yellow-600">
+          Join Now
+        </button>
+      </div>
+    </section>
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
+      <!-- Logo and Description -->
+      <div>
+        <div class="flex items-center gap-2 mb-4">
+          <img src="./img/logoFooter.png" alt="Logo" class="w-8 h-8">
+          <span class="text-lg font-bold text-gray-800">Logo</span>
+        </div>
+        <p class="text-sm text-gray-600 mb-4 text-justify">
+          SalesRank.AI offers a comprehensive suite of AI-powered solutions to help you find expert sales professionals
+          who can elevate every aspect of your business. From performance rankings and skill verification to industry
+          benchmarking and real-time analytics, we provide the insights and tools to optimize your sales strategy and
+          drive growth.
+        </p>
+        <div class="flex gap-4">
+          <a href="#" class="text-gray-600 hover:text-gray-800">
+            <img src="./img/facebook.png" alt="Facebook" class="w-6 h-6">
+          </a>
+          <a href="#" class="text-gray-600 hover:text-gray-800">
+            <img src="./img/twitter.png" alt="Twitter" class="w-6 h-6">
+          </a>
+          <a href="#" class="text-gray-600 hover:text-gray-800">
+            <img src="./img/linkedin.png" alt="LinkedIn" class="w-6 h-6">
+          </a>
+          <a href="#" class="text-gray-600 hover:text-gray-800">
+            <img src="./img/instagram.png" alt="Instagram" class="w-6 h-6">
+          </a>
+        </div>
+      </div>
+      <div class="grid grid-cols-3 gap-6">
+        <!-- Navigation Links -->
+        <div>
+          <h3 class="text-lg font-semibold text-gray-800 mb-4">Navigation</h3>
+          <ul class="space-y-2 text-sm text-gray-600">
+            <li><a href="#" class="hover:text-gray-800">Service</a></li>
+            <li><a href="#" class="hover:text-gray-800">Agency</a></li>
+            <li><a href="#" class="hover:text-gray-800">Case Study</a></li>
+            <li><a href="#" class="hover:text-gray-800">Resource</a></li>
+            <li><a href="#" class="hover:text-gray-800">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- License Links -->
+        <div>
+          <h3 class="text-lg font-semibold text-gray-800 mb-4">License</h3>
+          <ul class="space-y-2 text-sm text-gray-600">
+            <li><a href="#" class="hover:text-gray-800">Privacy Policy</a></li>
+            <li><a href="#" class="hover:text-gray-800">Copyright</a></li>
+            <li><a href="#" class="hover:text-gray-800">Email Address</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Information -->
+        <div>
+          <h3 class="text-lg font-semibold text-gray-800 mb-4">Contact</h3>
+          <ul class="space-y-2 text-sm text-gray-600">
+            <li class="flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-600" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 10h11M9 21V3m0 0l-6 6m6-6l6 6" />
+              </svg>
+              (406) 555-0120
+            </li>
+            <li class="flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-600" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12H8m0 0l4-4m-4 4l4 4" />
+              </svg>
+              Hey@boo.com
+            </li>
+            <li class="flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-600" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 10h11M9 21V3m0 0l-6 6m6-6l6 6" />
+              </svg>
+              2972 Westheimer Rd. Santa Ana, Illinois 85486
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <hr>
+  <div class="bg-gray-200 py-4 text-center">
+    <p class="text-sm text-gray-600">© 2025 Ahm Imran. All rights reserved.</p>
+
+
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
