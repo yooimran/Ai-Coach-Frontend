@@ -11,6 +11,7 @@ SalesRank.AI is a responsive website designed to showcase AI-powered solutions f
    git clone <https://github.com/yooimran/Ai-Coach-Frontend.git>
 
    Live Site <https://yooimran.github.io/Ai-Coach-Frontend/>
+  Netlify Live site  <https://ai-coach-frontend.netlify.app//>
    
 
    Install Dependencies:
